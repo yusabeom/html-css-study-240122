@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#">
+
+        <select name="drink"> <!--보여지는것과 전송되는것을 바꾸려면 밸류-->
+            <optgroup label="Coffee">
+                <option value="ame">Americano</option>
+                <option value="esp">Espresso</option>
+                <option value="caf">CafeeLatte</option>
+            </optgroup>
+            <optgroup label="Non-Coffee">
+                <option value="org">Orange Juice</option>
+                <option value="ap">Apple Juice</option>
+                <option value="grp">Grape Juice</option>
+                <option value="wtm">Watermelon Juice</option>
+            </optgroup>
+        </select>
+
+        <br><br><br>
+
+        <hr>
+
+        <input type="text" list="fruits" autocomplete="off">
+
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Orange</option>
+            <option>Grape</option>
+            <option>Mango</option>
+        </datalist>
+
+        <input type="submit" value="주문">
+
+    </form>
+
+
+
+</body>
+
+</html>

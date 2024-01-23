@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--선 병합-->
+<style>
+    table {
+        border-collapse: collapse;
+    }
+</style>
+
+</head>
+
+<body>
+    <!--table태그는 표를 작성하는 태그이다.-->
+
+    <table border="1">
+        <!--table의 자식태그 tr은 표의 행을 나타냅니다.-->
+        <tr>
+            <!--td는 tr의 자식태그 한 행에 들어갈 열을 나타냅니다-->
+            <th>이름</th>
+            <!--th는 가운데정렬 굵어짐-->
+            <th>나이</th>
+            <th>성별</th>
+            <th>주소</th>
+            <td rowspan="4" align="center"><!--rowspan:세로병합-->
+                <button>
+                세로버튼
+            </button>
+        </td>
+        </tr>
+        <tr>
+            <td>김찰스</td>
+            <td>28</td>
+            <td>남성</td>
+            <td>경기도</td>
+        </tr>
+        <tr>
+            <td>박은희</td>
+            <td>29</td>
+            <td>여성</td>
+            <td>제주도</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center"><!--가운데정렬-->
+                <!--colspan:가로 셀 병합 옵션 합칠 칸수 적으면 됨-->
+                <button>버튼</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #i-yellow {
+            color: yellow;
+        }
+        div { /*우선순위는 임포턴드>인라인>아이디>태그순으로 우선순위점수가
+             정해진대로 class=10, id=100, inline1000 not=0
+             가상선택자=10, beforafter=1 !important=무한 */
+            color: red !important;
+            width: 200px;
+        }
+        .c-green {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="i-yellow" class="c-green" style="color: orange;">hello</div>
+
+</body>
+
+</html>

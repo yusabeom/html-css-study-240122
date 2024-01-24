@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--아직일어나지 않은 미래를 지정
+    hover를 지정하면 마우스커서르 가져갔을때 변화를 일으킴
+    active를 지정하면 클릭했을때 변화를 일으킴
+    focus를 지정하면 마우스커서를 클릭했을때(깜빡이면) 변화를 일으킴-->
+    <style>
+        a:hover {
+            color: aqua;
+            font-weight: bold;
+            font-size: 60px;
+            background: red;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            transition: 0.5s;
+        }
+
+        .box:active {
+            width: 800px;
+            background: yellow;
+        }
+
+        input {
+            width: 100px;
+            border: 1px solid gray;
+            padding: 5px 10px;
+            outline: none;
+            transition: 0.5s;
+        }
+
+
+        input:focus {
+            border-color: red;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.google.com">gogo</a>
+
+    <!--단축기 태그 클래스 넣을말 ex div.box-->
+    <div class="box"></div>
+    <br>
+    <input type="text">
+
+    </h1>
+</body>
+
+</html>

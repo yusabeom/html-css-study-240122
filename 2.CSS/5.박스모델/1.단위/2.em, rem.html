@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body * {
+            border: 2px solid black;
+        }
+        .container {
+            font-size: 20px;
+            width: 60em;
+        }
+        .parent {
+            width: 50%;
+            font-size: 2em;
+        }
+        .child {
+            width: 30%;
+            font-size: 3rem;
+        }/* rem은 HTML 픽셀기준(16이 기본) 배수*/
+    </style>
+</head>
+<body>
+
+    <div class="container">container
+        <div class="parent">parent
+            <div class="child">child1</div>
+            <div class="child">child2</div>
+        </div>
+    </div>
+    
+</body>
+</html>

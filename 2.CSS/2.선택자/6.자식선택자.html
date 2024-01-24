@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- >자식태그 직속자식만 해당하고 적용된하위 코드들은 다 적용  -->
+    <style> 
+        ul > .orange {
+            color: orange;
+        }
+        div > ul > li {
+            font-weight: bold;
+        }
+        div > ul > li > ol {
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+    <h1>안녕안녕~~~</h1>
+    <div>
+        <ul>
+            <li>사과
+                <ol><!--li*3{$}이렇게 입력하면 차례로 나옴-->
+                   <li>1번째</li>
+                   <li>2번째</li>
+                   <li>3번째</li>
+                </ol>
+            </li>
+            <li class="orange">오랜지</li>
+            <li>딸기
+                <ol>
+                    <li>1번째</li>
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오랜지</span>
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    input[value=hello] {
+        width: 200px;
+        color: aqua;
+        
+    }
+    input[type=password] {
+        color: red;
+        width: 100px;
+    }
+    input[disabled] {
+        opacity: 0.2;
+    }
+    button[class^=btn-] {
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    button[class$=s] {
+        background: green;
+    }
+</style>
+<!--위와같이 같은 단어로 시작하는 클래스를 묶을땐
+class^=클래스이름- 이렇게 작성하면 가능하고 뒤에 단어를 사용할대는 class$사용-->
+</head>
+<body>
+    
+    <input type="text" value="hello">
+    <input type="password" value="1234">
+    <input type="text" value="disabled-text" disabled> 
+
+
+    <button class="btn-success">Success</button>
+    <button class="btn-danger">Danger</button>
+</body>
+</html>

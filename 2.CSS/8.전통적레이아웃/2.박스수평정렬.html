@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /*float을 이용하면 블록요소를
+             가로로 이용할 수 있고 사이에 빈 공간을 없앨 수 있다.*/
+            float: left;
+            width: 150px;
+            height: 100px;
+            background: red;
+            font-size: 30px;
+            color: #fff;
+            margin: 10px;
+            
+        }
+        .new-box {
+            width: 200px;
+            height: 150px;
+            background: orange;
+            clear: both; /*clear를 사용해줘서 배치가 끝난후 적용가능*/
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="new-box">4</div>
+
+</body>
+</html>

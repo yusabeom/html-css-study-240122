@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 2px solid gray;
+/* 커버는 비율을 유지해서 살짝 잘릴 수 있음
+   컨테인은 짧은 쪽에 맞춰 비율유지 빈공간 있을 수 있음 */
+            background-color: yellow;
+            background-image: url(./images/sunflower.jpg);
+            /* background-size: cover; */
+            background-repeat: no-repeat; 
+            /*반복하기 싫을때*/
+            background-position: 33% 14%;
+            /* %, px, em으로 지정이 가능
+            가로축과 세로축을 한번에 지정 가능
+            가로축만 사용하면 세로축은 가운데 정렬
+            % -> 왼쪽 상단 0% 0%, 오른쪽 하단이 100% 100%
+            방향 -> top, bottom, left, right, center */
+        background: yellow url(./images/sunflower.jpg) no-repeat 30% 15% /200px 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

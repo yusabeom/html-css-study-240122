@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @media (min-width:768px) {
+        .box {
+            border: 1px solid black;
+        }
+       } 
+       @media (max-width:767px) {
+        .box {
+            display: none;
+        }
+        div .box2 .inner {
+            float: left;
+            width: 50%;
+        }
+       }
+       
+       .box2 {
+           width: 100%;
+           margin: 0 auto;
+        }
+        @media (min-width:1300px) {
+       .box2 .inner {
+        float: left;
+        width: 16.6666666666666666666666%;
+       }}
+       @media (max-width:1299px) {
+        .box2 .inner {
+            float: left;
+            width: 25%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        내용.......
+    </div>
+    <div class="box2">
+        <div class="inner">내용내용내용내용내용</div>
+        <div class="inner">내용내용내용내용내용</div>
+        <div class="inner">내용내용내용내용내용</div>
+        <div class="inner">내용내용내용내용내용</div>
+        <div class="inner">내용내용내용내용내용</div>
+        <div class="inner">내용내용내용내용내용</div>
+    </div>
+</body>
+</html>

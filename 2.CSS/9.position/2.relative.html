@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px dotted orange;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        .relative { /*빈공간이 유지됨 자기자신의 본래자리를 지킴
+            자기자신을 기준으로 움직인다*/
+            position: relative;
+            left: 108px;
+            top: 108px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">1</div>
+    <div class="box relative">2</div>
+    <div class="box">3</div>
+    
+</body>
+</html>

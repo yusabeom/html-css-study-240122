@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 100px 180px;
+        }
+        .box {
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+            border: 4px dashed yellow;
+            background: tomato;
+            line-height: 100px;
+            text-align: center;
+            position: relative;
+            float: left;
+            margin-left: -30px;
+        }
+        .box:hover {
+                background: greenyellow;
+                border: 4px dashed red;
+                transition: 0.5s;
+            transform: translateY(-20px);
+            cursor: pointer;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+
+</html>

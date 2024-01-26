@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandparent {
+            width: 400px;
+            height: 300px;
+            padding: 100px;
+            border: 4px dashed gray;
+            position: relative;
+           
+        }
+
+        .parent {
+            width: 300px;
+            height: 300px;
+            border: 4px dashed lightgray;
+            position: absolute;
+            left: 100px;
+            top: 200px;
+        }
+        .child {
+            width: 120px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        .apsolute { /*  원래 있던 위치는 다른요소가 차지함 relative와 다름
+                        기준이 없으면 화면을 기준으로 이동
+                        부모를 기준으로 움직이길 원한다면
+                        부모에게 포지션을 줘야함
+                        가장가까운 포지션을 가진 부모를 따르고
+                        relative포지션을 가진 부모는 움직이지 않고
+                        부모도 apsolute포지션을 가진다면 부모도 움직인다.*/
+            position: absolute;
+            right: 100px;
+            bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child apsolute">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

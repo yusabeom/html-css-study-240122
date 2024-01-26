@@ -1,0 +1,76 @@
+@import url(../../common.css);
+
+body {
+    background: gray;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: '굴림',serif;
+}
+#wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+header {
+    background: #123456;
+    padding: 10px;
+    color: #fff;
+}
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #cc0;
+    text-align: center;
+    font-family: monospace, cursive;}
+    header h1 strong {
+        font-size: 3em;
+        color: #fff;
+    }
+    header h1 span {
+        font-size: 1.5em;
+    }
+    header h1 em {
+        font-size: 2em;
+        color: #ccc;
+    }
+    .container {
+        background: #ccc;
+
+    }
+    .container .menu {
+        float: left;
+        width: 20%;
+        padding: 20px;
+    }
+    .container .content {
+        background: #fff;
+        float: right;
+        width: 80%;
+
+    }
+    .container .menu li {
+        margin-bottom: 8px;
+        text-decoration: underline;
+    }
+    .container .content h2 {
+        background: #800;
+        color: #ee0;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 5px 20px;
+        font-family: cursive, '궁서';
+    }
+    .container .content p {
+        padding: 20px;
+        text-align: justify;
+
+    }
+    footer {
+        background: #aaa;
+        padding: 10px 20px;
+    }
+    footer address {
+        color: #000;
+    }
+
+

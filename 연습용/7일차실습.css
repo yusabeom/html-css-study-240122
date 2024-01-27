@@ -1,0 +1,123 @@
+@import url(../common.css);
+
+body {
+    background: lightgray;
+    line-height: 1.5;
+    font-size: 15px; }
+    #wrapper {
+        background: white;
+        width: 70%;
+        margin: 0 auto;
+    }
+    header {
+        text-align: center;
+    }
+    header h1 {
+        
+        background: orange;
+        color: white;
+        font-size: 6em;
+        font-weight: bold;
+
+    }
+    header h1 span {
+        font-size: 0.19em;
+        display: block;
+        padding-bottom: 5px;
+    }
+    header h2 {
+        background: rgb(236, 230, 230);
+        font-size: 0.75em;
+    }
+    .container {
+        line-height: 1.5;
+    }
+    .side-menu {
+        width: 25%;
+        float: left;
+        
+    }
+    .side-menu h3 {
+        background: rgb(155, 8, 8);
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 5px 10px;
+    }
+    .side-menu ul {
+        padding: 10px;
+        line-height: 2.5;
+        font-size: 0.8em;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .main-content {
+        width: 50%;
+        
+        background: lightgray;
+       float: left;
+    }
+    .banner {
+        width: 25%;
+        float: right;
+        padding: 10px;
+    }
+    .banner h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .banner h3 .all {
+        color: gray;
+        text-decoration: underline;
+        display: block;
+    }
+    .banner h3 .love {
+        color: orange;
+        text-decoration: underline;
+        display: block;
+    }
+    .banner h3 strong {
+        margin-bottom: 30px;
+        display: block;
+    }
+    .link li span {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 500;
+        
+    }
+    .link {
+        font-size: 0.7em;
+    }
+    .link li a {
+        text-decoration: underline;
+        font-weight: 700;
+        font-family: sans-serif, serif;
+    }
+    .art-piece {
+        padding: 10px;
+    }
+    .art-piece .title {
+        background: rgb(16, 16, 53);
+        color: white;
+        padding: 2px;
+        font-weight: 700;
+    }
+    .art-piece .artist {
+        font-weight: bold;
+        padding: 10px 0; 
+    }
+    .art-piece .detail {
+        font-size: 0.6em;
+        font-weight: 500;
+    }
+    footer {
+        text-align: center;
+        background: rgb(16, 16, 53);
+        color: white;
+        font-size: 0.75em;
+        padding: 5px;
+    }
+    footer a {
+        text-decoration: underline;
+    }

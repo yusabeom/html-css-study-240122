@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            border: 4px solid #000;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            /* align-items: stretch;기본값 */
+            /* align-items: baseline; 폰트크기가 다른경우 텍스트 베이스라인에 맞춰 정렬 */
+            align-items: baseline;
+        }
+
+
+            .item {
+                width: 150px;
+                height: 100px;
+                background: red;
+                border: 4px dashed orange;
+                border-radius: 10px;
+                font-size: 40px;
+                
+            }
+            .item:nth-child(even) {
+                font-size: 20px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+
+</html>
